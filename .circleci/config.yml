@@ -43,7 +43,6 @@ jobs:
              if git log -1 --pretty=%b | grep release ; then
              echo "New release, do nothing"
              else
-             cat ~/build/CHANGES.md
              github_changelog_generator --user franklin-feingold --project bids-specification-test2 --output ~/build/CHANGES.md --base ~/build/src/pregh-changes.md --header-label Changelog --no-issues --no-issues-wo-labels --no-filter-by-milestone --no-compare-link --pr-label ""
              cat ~/build/CHANGES.md
              mv ~/build/CHANGES.md ~/build/src/CHANGES.md
