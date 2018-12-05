@@ -1,14 +1,10 @@
 Changelog
 
-## [Unreleased](https://github.com/franklin-feingold/bids-specification/tree/HEAD)
+## [Unreleased](https://github.com/franklin-feingold/bids-specification-test2/tree/HEAD)
 
--   update 12/4 [#7](https://github.com/franklin-feingold/bids-specification/pull/7) ([franklin-feingold](https://github.com/franklin-feingold))
--   update 10/31 [#6](https://github.com/franklin-feingold/bids-specification/pull/6) ([franklin-feingold](https://github.com/franklin-feingold))
--   update 10-29 [#5](https://github.com/franklin-feingold/bids-specification/pull/5) ([franklin-feingold](https://github.com/franklin-feingold))
--   update 10/24 [#4](https://github.com/franklin-feingold/bids-specification/pull/4) ([franklin-feingold](https://github.com/franklin-feingold))
--   update 10-12 [#3](https://github.com/franklin-feingold/bids-specification/pull/3) ([franklin-feingold](https://github.com/franklin-feingold))
--   merge to catch up [#2](https://github.com/franklin-feingold/bids-specification/pull/2) ([franklin-feingold](https://github.com/franklin-feingold))
--   update my fork [#1](https://github.com/franklin-feingold/bids-specification/pull/1) ([franklin-feingold](https://github.com/franklin-feingold))
+-   Update config.yml 4 [#4](https://github.com/franklin-feingold/bids-specification-test2/pull/4) ([franklin-feingold](https://github.com/franklin-feingold))
+-   Update config.yml 2 [#3](https://github.com/franklin-feingold/bids-specification-test2/pull/3) ([franklin-feingold](https://github.com/franklin-feingold))
+-   Update config.yml [#2](https://github.com/franklin-feingold/bids-specification-test2/pull/2) ([franklin-feingold](https://github.com/franklin-feingold))
 
 ## 1.1.1
 
