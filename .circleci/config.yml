@@ -91,7 +91,7 @@ jobs:
              mkdir ~/project/src/tmp
              cat ~/build/src/CHANGES.md
              cp ~/build/src/CHANGES.md ~/project/src/CHANGES.md
-             ~/node_modules/.bin/remark ~/project/src/CHANGES.md --frail -o ~/project/src/tmp/CHANGES.md
+             ~/node_modules/.bin/remark ~/project/src/CHANGES.md -o ~/project/src/tmp/CHANGES.md
              ~/node_modules/.bin/remark ~/project/src/tmp/CHANGES.md --frail
              fi
              else
