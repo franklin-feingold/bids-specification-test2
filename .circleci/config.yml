@@ -85,21 +85,22 @@ jobs:
              if git log -1 --pretty=%s | grep Merge* ; then
              if git log -1 --pretty=%b | grep release ; then
              echo "New release, do nothing"
-             mkdir ~/build/src/tmp/
-             touch ~/build/src/tmp/empty.txt
+             mkdir ~/project/src/tmp
+             touch ~/project/src/tmp/empty.txt
              else
-             mkdir ~/build/src/tmp/
+             mkdir ~/project/src/tmp
              cat ~/build/src/CHANGES.md
-             ~/node_modules/.bin/remark ~/build/src/CHANGES.md --frail -o ~/build/src/tmp/CHANGES.md
-             ~/node_modules/.bin/remark ~/build/src/tmp/CHANGES.md --frail
+             cp ~/build/src/CHANGES.md ~/project/src/CHANGES.md
+             ~/node_modules/.bin/remark ~/project/src/CHANGES.md --frail -o ~/project/src/tmp/CHANGES.md
+             ~/node_modules/.bin/remark ~/project/src/tmp/CHANGES.md --frail
              fi
              else
              echo "Not a PR merge commit"
-             mkdir ~/build/src/tmp/
-             touch ~/build/src/tmp/empty.txt
+             mkdir ~/project/src/tmp
+             touch ~/project/src/tmp/empty.txt
              fi
       - persist_to_workspace:
-             root: ~/build/src
+             root: ~/project/src
              paths: tmp
 
 # Push built changelog to repo
@@ -145,4 +146,3 @@ workflows:
       - push:
           requires:
                - remark
-
