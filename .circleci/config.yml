@@ -13,6 +13,8 @@ jobs:
           command: |
             sudo pip install pip==18.0
             sudo pip install pipenv==2018.7.1
+            sudo pip install WeasyPrint
+            sudo pip install mkdocs-pdf-export-plugin
             pipenv install
       - save_cache:
           key: deps9-{{ .Branch }}-{{ checksum "Pipfile.lock" }}
