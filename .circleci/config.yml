@@ -165,7 +165,7 @@ workflows:
   search_build:
     jobs:
       - build
-      - pdfexport
+      - pdf_export
       - github-changelog-generator
       - remark:
           requires:
