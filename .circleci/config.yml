@@ -28,7 +28,7 @@ jobs:
           
   pdf_export:
     docker:
-      - image: ustcmirror/homebrew-bottles
+      - image: cleafy/sxkdvm
     steps:
       - checkout
       - run: sudo chown -R circleci:circleci /usr/local/bin
