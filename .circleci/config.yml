@@ -28,7 +28,7 @@ jobs:
           
   pdf_export:
     docker:
-      - image: madhums/python-ruby-node
+      - image: ustcmirror/homebrew-bottles
     steps:
       - checkout
       - run: sudo chown -R circleci:circleci /usr/local/bin
