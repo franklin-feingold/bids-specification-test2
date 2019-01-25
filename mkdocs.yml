@@ -2,7 +2,7 @@ site_name: Brain Imaging Data Structure
 theme: material
 plugins:
     - search
-    - pdf-export
+    - pdf-export:
         verbose: true
         combined: true
         combined_output_path: ../combined.pdf
